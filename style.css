@@ -324,6 +324,7 @@ line-height: normal;
 }
 .mail-box{
     background-image: url("Flower asset/Rectangle-9.png");
+    border: 1px dotted black;
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
