@@ -323,7 +323,7 @@ line-height: normal;
     padding: 0;
 }
 .mail-box{
-    background-image: url("Flower asset/Rectangle\ 9.png");
+    background-image: url("./Flower asset/Rectangle-9.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 90vw;
@@ -347,6 +347,7 @@ line-height: normal;
 }
 .mail-line input{
     width: 80%;
+    box-shadow: 0px 0px 20px grey;
 }
 .mail-line input::placeholder{
     padding-left: 10px;
