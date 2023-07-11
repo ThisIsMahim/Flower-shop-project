@@ -3,6 +3,10 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
 }
 /* header related style */
 #top{
@@ -219,9 +223,19 @@ line-height: normal;
     height: 40vh;
     width: 100%;
     border-radius: 8px;
-    background: rgba(229, 84, 115, 0.05);
+    background: #b73b52;
     padding-top: 8vh;
+    -webkit-mask: linear-gradient(120deg, #000 25%, rgba(0, 0, 0, 0.811), #000 75%) right/250% 100%;
+    /* shimmer effect animation */
+    animation: shimmer 3.5s infinite;
+    border: 1px solid darkblue;
+    margin-bottom: 5%;
 }
+ @keyframes shimmer {
+         100% {
+            -webkit-mask-position: left;
+         }
+        }
 .hot-sale-section{
     width: 90%;
     display: flex;
@@ -233,13 +247,19 @@ line-height: normal;
     padding: 0;
 }
 .off{
-    color: #E55473;
+    color: gold;
 }
 .hot-sale-text{
     display: flex;
     flex-direction: column;
     row-gap: 2vh;
     align-items: center;
+}
+.hot-sale-text h2{
+    color: antiquewhite;
+}
+.hot-sale-text p{
+    color: rgba(250, 235, 215, 0.612);
 }
 .sign-up-btn{
     padding: 10px 20px;
@@ -255,5 +275,127 @@ line-height: normal;
 .sign-up-btn:hover{
     transform: scale(1.05);
     cursor: pointer;
-    background-color: #f13d64;
+    background-color: gold;
+    color: black;
+}
+#instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    row-gap: 0px;
+    margin-bottom: 5%;
+}
+#instagram *{
+    margin: 0;
+    padding: 0;
+}
+.insta-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+.insta-img-container{
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.insta-img:hover{
+    /* transform: rotate(2deg); */
+    box-shadow: 10px 10px 20px grey;
+    cursor: pointer;
+}
+/* new-letter */
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#newsletter *{
+    margin: 0;
+    padding: 0;
+}
+.mail-box{
+    background-image: url("Flower asset/Rectangle\ 9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.mail-line{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    column-gap: 20px;
+}
+.mail-line button{
+    width: 20%;
+    height: 40px;
+}
+.mail-line input{
+    width: 80%;
+}
+.mail-line input::placeholder{
+    padding-left: 10px;
+    font-family: work sans;
+}
+/* footer  */
+footer{
+    height: 40vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    color: #FFFFFFE5;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: auto 0;
+}
+footer *{
+    margin: 0;
+    padding: 0;
+}
+footer h2{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.40);
+text-align: center;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer-text{
+    width: 50%;
+    text-align: center;
+    color: rgba(250, 235, 215, 0.744);
+}
+.pink{
+    color: #E55473;
+}
+footer{
+    margin: 0; 
 }
